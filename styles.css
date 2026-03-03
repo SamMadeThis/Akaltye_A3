@@ -28,7 +28,7 @@ h3 {
 
 h1 {
   font-weight: 800;
-  font-size: clamp(32px, 4.2vw, 64px);
+  font-size: clamp(28px, 2rem, 64px);
   /*CAPPING SIZES*/
   color: #2d1810;
   margin-bottom: 25px;
@@ -2318,5 +2318,6 @@ border radius used to create the abstract shape*/
     display: block;
 
   }
+
 
 }
