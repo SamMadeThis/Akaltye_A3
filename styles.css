@@ -2215,6 +2215,8 @@ border radius used to create the abstract shape*/
   .s2-col {
     padding-right: 1.2rem;
     width: 80vw;
+    min-width:200px;
+    
 
   }
 
@@ -2317,5 +2319,6 @@ border radius used to create the abstract shape*/
 
 
 }
+
 
 
