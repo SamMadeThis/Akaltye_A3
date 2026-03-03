@@ -2031,20 +2031,16 @@ border radius used to create the abstract shape*/
 /*Correct answer highlight*/
 .correct {
   background: #1B5E20 !important;
-  /* Deep green */
   color: var(--color-cream) !important;
   border: 3px solid #4CAF50 !important;
-  /* Bright green border */
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4) !important;
 }
 
 /*Incorrect answer highlight*/
 .incorrect {
   background: #B71C1C !important;
-  /* Deep red */
   color: var(--color-cream) !important;
   border: 3px solid #EF5350 !important;
-  /* Bright red border */
   box-shadow: 0 4px 12px rgba(183, 28, 28, 0.4) !important;
 }
 
@@ -2217,13 +2213,13 @@ border radius used to create the abstract shape*/
 
 
   .s2-col {
-    padding-right: 30px;
-    width: 60%;
+    padding-right: 1.2rem;
+    width: 80vw;
 
   }
 
   .img-gallery sl-carousel {
-    width: 100%;
+    width: 90%;
     height: 500px;
     margin-bottom: 20px;
   }
@@ -2255,20 +2251,20 @@ border radius used to create the abstract shape*/
   }
 
   .word-card {
-    width: 46%;
-    height: 25%;
-    min-height: 200px;
-    min-width: 200px;
+    width: 90vw;
+    height: 25vh;
+    min-height: 100px;
+    min-width: 100px;
   }
 
   .arrernte {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0 0;
   }
 
   .english,
   .pronounciation {
-    font-size: 14px;
+    font-size: 0.9rem;
     margin: 0 0;
   }
 
@@ -2278,7 +2274,7 @@ border radius used to create the abstract shape*/
   /*changing the shape of the quiz to square*/
   .q-app {
     width: 90%;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 200px;
     max-height: 500px;
     border-radius: 10px;
@@ -2321,4 +2317,5 @@ border radius used to create the abstract shape*/
 
 
 }
+
 
