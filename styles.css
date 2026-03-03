@@ -1686,7 +1686,7 @@ sl-button::part(base):hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 3.75rem;
   z-index: 2;
 
 }
@@ -1705,7 +1705,7 @@ sl-button::part(base):hover {
   /*setting minimum width */
   max-width: 600px;
   /*setting max width */
-  padding: 20px;
+  padding: 1.25rem;
   margin: 0;
 }
 
@@ -1723,7 +1723,7 @@ sl-button::part(base):hover {
 
 
 .s2-about {
-  padding: 28px;
+  padding: 1.25rem;
   background-color: rgba(240, 239, 247, 0.95);
   border-radius: 20px;
   max-width: 100%;
@@ -1737,14 +1737,14 @@ sl-button::part(base):hover {
   line-height: 1.8;
   margin-bottom: 18px;
   color: var(--color-charcoal);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 1.875rem 1.25rem;
   margin: 25px 0;
   position: relative;
 }
@@ -2321,3 +2321,4 @@ border radius used to create the abstract shape*/
 
 
 }
+
