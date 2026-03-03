@@ -2093,7 +2093,7 @@ border radius used to create the abstract shape*/
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 90vh;
   width: 90%;
   gap: 15px;
   flex-wrap: wrap;
@@ -2111,7 +2111,7 @@ border radius used to create the abstract shape*/
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 
@@ -2316,9 +2316,12 @@ border radius used to create the abstract shape*/
     display: block;
 
   }
-
+.urls{
+  width: 90vw;
+  height:30vh;
 
 }
+
 
 
 
