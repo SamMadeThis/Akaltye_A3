@@ -6,3 +6,8 @@ Arrernte (Aranda) is one of more than 250 Aboriginal languages spoken in Austral
 
 Author: SamMadeThis - https://github.com/SamMadeThis/ 
 Link: https://sammadethis.github.io/Akaltye_A3/
+
+## ✍️ Author
+
+I'm [Sam Brayne](https://github.com/SamMadeThis/), and I created this project with the goal of developing it into a more advanced curriculum and interactive experience. *It would be great to find a group of people to collaborate with*
+
