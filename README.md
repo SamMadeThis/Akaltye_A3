@@ -6,7 +6,7 @@
 The aim of this project is to increase the number of Arrernte language speakers; currently, there are fewer than 4,000 speakers.
 Arrernte (Aranda) is one of more than 250 Aboriginal languages spoken in Australia. This website focuses on the Eastern and Central Arrernte dialect.
 
-Link: https://sammadethis.github.io/Akaltye_A3/
+[Website Link] (https://akaltye.netlify.app/)
 
 ## ✍️ Author
 
