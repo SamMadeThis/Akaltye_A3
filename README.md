@@ -1,4 +1,6 @@
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/516f50e0-419b-402d-bc6d-b9f880d73bef/deploy-status)](https://app.netlify.com/projects/akaltye/deploys)
+
 ## ℹ️ Overview
 I created this website for my University assignment in late 2025. 
 The aim of this project is to increase the number of Arrernte language speakers; currently, there are fewer than 4,000 speakers.
