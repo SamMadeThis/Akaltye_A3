@@ -1644,7 +1644,7 @@ sl-button::part(base):hover {
 /*================ SECTION 2 ABOUT US  =======================*/
 
 #section-2 {
-  padding: 40px 80px;
+  padding: 10px 40px;
   /*this needs to be changed on smaller screens*/
 }
 
@@ -1653,12 +1653,9 @@ sl-button::part(base):hover {
   position: absolute;
   top: 0;
   left: 0;
-
   height: 100vh;
   width: 100vw;
-
   background: linear-gradient(135deg, var(--color-terracotta) 0%, var(--color-dark-brown) 85%, var(--color-gray) 100%);
-
   z-index: 0;
   overflow: hidden;
 }
@@ -1668,110 +1665,48 @@ sl-button::part(base):hover {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   background: url('images/sect-2-sb.svg') center/contain no-repeat;
-
   opacity: 0.15;
   z-index: 1;
 }
 
-
-/*ROW*/
 .s2-contents {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3.75rem;
+  gap: 1.55rem;
   z-index: 2;
-
 }
 
-.s2-contents:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-/*COLUMNS*/
-.s2-col {
-  width: 50%;
-  /*width of the two columns */
-  min-width: 500px;
-  /*setting minimum width */
-  max-width: 600px;
-  /*setting max width */
-  padding: 1.25rem;
-  margin: 0;
-}
-
-/* LEFT COLUMN */
-.s2-col:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.s2-col h1 {
-  z-index: 2;
+.s2-contents h1 {
+  z-index: 1;
   /*bringing h1 forward*/
 }
 
 
 .s2-about {
-  padding: 1.25rem;
-  background-color: rgba(240, 239, 247, 0.95);
+  padding: 1.45rem;
+  background-color: #f0eff79c;
   border-radius: 20px;
-  max-width: 100%;
-  margin-bottom: 25px;
+  min-width: 450px;
+  max-width: 900px;
   box-shadow: 0 6px 20px rgba(87, 54, 47, 0.25);
   backdrop-filter: blur(10px);
+
 
 }
 
 .s2-about p {
   line-height: 1.8;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   color: var(--color-charcoal);
   font-size: 1rem;
 }
 
-blockquote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.875rem 1.25rem;
-  margin: 25px 0;
-  position: relative;
-}
 
-blockquote p {
-  text-align: center;
-  font-size: 1.1em;
-  font-style: italic;
-  margin: 15px 0;
-  color: var(--color-dark-brown);
-  line-height: 1.6;
-}
-
-blockquote footer {
-  font-size: 0.9em;
-  color: var(--color-gray);
-  font-style: normal;
-  font-weight: 500;
-  margin-top: 10px;
-}
-
-blockquote::before,
-blockquote::after {
-  content: "";
-  display: block;
-  width: 70%;
-  height: 3px;
-  background: linear-gradient(to right, transparent, var(--color-dark-brown) 20%, var(--color-dark-brown) 80%, transparent);
-}
 
 /* Button styling */
 #s2-btn {
@@ -1779,49 +1714,9 @@ blockquote::after {
   align-self: flex-start;
 }
 
-/* IMAGE GALLERY - CAROUSEL */
-.img-gallery {
-  position: relative;
-}
-
-.img-gallery sl-carousel {
-  width: 650px;
-  height: 750px;
-  /*sets the total height of the carousel container*/
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
 
 
-sl-carousel::part(navigation-button) {
-  color: var(--color-cream-tr);
-}
 
-.img-gallery sl-carousel-item {
-  height: 650px;
-  /*sets the total height of the images displayed in the carousel container*/
-  display: flex;
-  flex-direction: column;
-}
-
-/*Consistent displaying of images to cover and 100%*/
-.img-gallery sl-carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/*the image captions that accompany the images in the carousel*/
-.img-gallery p {
-  margin: 0;
-  text-align: center;
-  font-size: 14px;
-  color: var(--color-cream);
-  background: rgba(14, 17, 22, 0.7);
-  padding: 6px;
-}
 
 /*================ SECTION 3 WORD LIST =======================*/
 #section-3 {
@@ -2228,17 +2123,9 @@ border radius used to create the abstract shape*/
 
   }
 
-  /*Nav Tooltip text*/
-  #fp-nav ul li .fp-tooltip {
-    color: var(--color-black);
-    font-family: "Montserrat", sans-serif;
-  }
 
-  /*slides nab*/
-  .fp-slidesNav {
-    left: 17% !important;
-    bottom: 15% !important;
-  }
+
+
 
 }
 
@@ -2261,27 +2148,6 @@ border radius used to create the abstract shape*/
   /*section 2*/
 
 
-  .s2-col {
-    padding-right: 1.2rem;
-    width: 80vw;
-    min-width: 200px;
-
-
-  }
-
-  .img-gallery sl-carousel {
-    width: 90%;
-    height: 500px;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .s2-about p {
-    font-size: 16px;
-  }
 
   /* Shoelace button styling */
   sl-button::part(base) {

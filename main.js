@@ -7,11 +7,8 @@ new fullpage('#fullpage', {
     //options here
     autoScrolling:true,
     scrollHorizontally: true,
-    navigation: true,
-    navigationTooltips: ['Home','Who are we', 'Word List', 'Quiz', 'Resources'],
+
     showActiveTooltip: true,
-    navigationPosition: 'right',
-    slidesNavPosition: 'bottom',
     controlArrows: false,
 });
 
