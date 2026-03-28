@@ -60,7 +60,7 @@ a:hover {
 
 /*Global paragraph style*/
 p {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   color: var(--color-charcoal);
   font-size: 16px;
   line-height: 1.8;
@@ -88,23 +88,11 @@ p {
 
 /* ================== Fullpage JS styling ===================*/
 
-/*Nav Tooltip text*/
-#fp-nav ul li .fp-tooltip {
-  color: var(--color-black);
-  font-family: "Montserrat", sans-serif;
-}
 
-/*nav menu navigation dots*/
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: var(--color-black);
-}
 
-/*slides nab*/
-.fp-slidesNav {
-  left: 17% !important;
-  bottom: 15% !important;
-}
+
+
+
 
 /*section*/
 .section {
@@ -1570,7 +1558,7 @@ sl-button::part(base):hover {
 /*OVERRIDING GLOBAL H1 STYLE JUST FOR THE HOMEPAGE*/
 .text-content h1 {
   font-size: clamp(40px, 5.5vw, 82px);
-  /* Bigger for the homepage */
+  /*40px mobile first - Bigger for the homepage */
   color: var(--color-cream);
   animation: fadeIn 1.5s ease-in forwards;
 }
@@ -1634,8 +1622,18 @@ sl-button::part(base):hover {
   background: var(--color-cream);
   border-radius: 12px;
   max-width: 600px;
+  width: 70vw;
+
 
 }
+
+#welcome-dialog::part(body) {
+  font-size: 14px;
+  color: rgb(var(--sl-color-neutral-500));
+  padding: 0 2rem 1.5rem 2rem;
+}
+
+
 
 
 #welcome-dialog::part(overlay) {
@@ -1836,26 +1834,29 @@ sl-carousel::part(navigation-button) {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto;
-  padding: 80px;
-  /*this needs to be changed on smaller screens*/
+  padding-inline: 5px 10px;
 }
 
 .word-cards-container {
   display: flex;
-  gap: 50px;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 70%;
   width: 100%;
-  padding: 25px;
+  padding: 3em;
   flex-wrap: wrap;
   /*added wrap for smaller screens*/
+
+  gap: 10px;
 }
 
+
+
+
 /*word cards - containers used to keep the info together */
-.word-card {
+/* .word-card {
   position: relative;
-  /* For absolute positioning of icons */
+   For absolute positioning of icons 
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -1867,9 +1868,30 @@ sl-carousel::part(navigation-button) {
   border: 1px solid var(--color-tan);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(87, 54, 47, 0.15);
+  /* box shadow to bring in some depth 
+  transition: transform 0.2s, box-shadow 0.2s;
+} */
+
+
+.word-card {
+  position: relative;
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--color-tan);
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  width: 90vw;
+  height: 25vh;
+  min-height: 150px;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(87, 54, 47, 0.15);
   /* box shadow to bring in some depth */
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 
 /*hover animation on the word-cards*/
 .word-card:hover {
@@ -1886,7 +1908,7 @@ sl-carousel::part(navigation-button) {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-tan);
+  background-color: var(--color-cream-tr);
   color: var(--color-dark-brown);
   padding: 10px;
   border-radius: 50%;
@@ -1897,19 +1919,21 @@ sl-carousel::part(navigation-button) {
 
 /*The Arrernte word styled bigger and bolder for emphasis*/
 .arrernte {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
-  margin: 10px 0;
-  color: var(--color-dark-brown);
+  margin: 10px;
+  color: var(--color-black);
   text-align: center;
 }
+
+
 
 /*English words are styled smaller & lighter so it doesnt compete with the arrernte word*/
 .english,
 .pronounciation {
   font-size: 18px;
   font-weight: 300;
-  padding: 5px;
+  padding: 15px;
   margin-bottom: 8px;
   color: var(--color-gray);
   text-transform: capitalize;
@@ -1926,6 +1950,17 @@ sl-tooltip {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*================ SECTION 4 - QUIZ  =======================*/
 
 #section-4 {
@@ -1938,6 +1973,7 @@ sl-tooltip {
   flex-direction: column;
 
 }
+
 
 /*QUIZ CODE*/
 
@@ -2191,6 +2227,19 @@ border radius used to create the abstract shape*/
     padding: 30px;
 
   }
+
+  /*Nav Tooltip text*/
+  #fp-nav ul li .fp-tooltip {
+    color: var(--color-black);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /*slides nab*/
+  .fp-slidesNav {
+    left: 17% !important;
+    bottom: 15% !important;
+  }
+
 }
 
 /*MOBILE*/
@@ -2215,8 +2264,8 @@ border radius used to create the abstract shape*/
   .s2-col {
     padding-right: 1.2rem;
     width: 80vw;
-    min-width:200px;
-    
+    min-width: 200px;
+
 
   }
 
@@ -2242,33 +2291,6 @@ border radius used to create the abstract shape*/
   }
 
   /*section 3*/
-
-  #section-3 {
-    padding-inline: 5px 10px;
-  }
-
-  .word-cards-container {
-    float: left;
-    gap: 10px;
-  }
-
-  .word-card {
-    width: 90vw;
-    height: 25vh;
-    min-height: 100px;
-    min-width: 100px;
-  }
-
-  .arrernte {
-    font-size: 1.125rem;
-    margin: 0 0;
-  }
-
-  .english,
-  .pronounciation {
-    font-size: 0.9rem;
-    margin: 0 0;
-  }
 
   /*Section 4*/
 
@@ -2316,14 +2338,10 @@ border radius used to create the abstract shape*/
     display: block;
 
   }
-.urls{
-  width: 70vw;
-  height:30vh;
 
+  .urls {
+    width: 70vw;
+    height: 30vh;
+
+  }
 }
-
-
-
-
-
-
