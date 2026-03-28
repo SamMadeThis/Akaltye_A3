@@ -3,11 +3,17 @@
 
 ## ℹ️ Overview
 
-The aim of this project is to increase the number of Arrernte language speakers; currently, there are fewer than 4,000 speakers.
+Purpose: Increase the number of Arrernte language speakers; currently, there are fewer than 4,000.
 Arrernte (Aranda) is one of more than 250 Aboriginal languages spoken in Australia. This website focuses on the Eastern and Central Arrernte dialect.
 
-- Fullpage.js
-- Inspired by apps such as Duolingo & Vocabulary 
+Elements:
+- HTML, CSS, JS
+- Fullpage.js 
+- Shoelace UI components
+- SVG animation
+
+Notes:
+- Design and interactions are inspired by apps such as Duolingo & Vocabulary 
 
 [Website Link] (https://akaltye.netlify.app/)
 
