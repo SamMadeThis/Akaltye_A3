@@ -1721,17 +1721,14 @@ sl-button::part(base):hover {
   /*bringing h1 forward*/
 }
 
-
 .s2-about {
   padding: 1.45rem;
   background-color: #f0eff79c;
   border-radius: 20px;
-  min-width: 180px, 75ch;
-  max-width: 900px, 75ch;
+  min-width: 180px;
+  max-width: 800px;
   box-shadow: 0 6px 20px rgba(87, 54, 47, 0.25);
   backdrop-filter: blur(10px);
-
-
 }
 
 .s2-about p {
@@ -1901,75 +1898,79 @@ sl-tooltip {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
   flex-direction: column;
 
 }
 
+.quiz {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
 
 /*QUIZ CODE*/
 
 /* .q-app is the background div of the quiz
 border radius used to create the abstract shape*/
 .q-app {
-  color: rgb(241, 241, 241);
-  background: linear-gradient(135deg, var(--color-dark-brown) 0%, var(--color-charcoal) 100%);
-  box-shadow: 0 4px 12px rgba(87, 54, 47, 0.5);
-  width: 90vw;
-  height: 70vh;
-  min-height: 800px;
-  min-width: 750px;
-  max-height: 900px;
-  max-width: 950px;
+  color: var(--color-charcoal-80);
+  /*background: linear-gradient(135deg, var(--color-dark-brown) 0%, var(--color-charcoal) 100%);*/
+  box-shadow: 0 4px 12px rgba(87, 54, 47, 0.527);
+
+  height: 500px;
+  max-width: 600px;
+  min-width: 150px;
 
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   flex-direction: column;
-  margin: 1.5em;
-  border-radius: 28% 72% 38% 62% / 65% 51% 49% 35%;
+
+  /*margin: 1em;*/
+  /*border-radius: 28% 72% 38% 62% / 65% 51% 49% 35%;*/
   /*abstract shape */
-  padding: 8em;
+  background-color: rgba(87, 54, 47, 0.13);
+  padding: 1em;
 }
 
 /*quiz questions*/
 .quiz h2 {
-  color: var(--color-cream);
+  color: var(--color-dark-brown-80);
   text-align: center;
-  max-width: 90%;
-  margin: 0 auto 20px auto;
   word-wrap: break-word;
 }
 
-
-
 /*quiz buttons for the answers*/
 .btn {
-  background: var(--color-dark-brown);
-  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--color-charcoal-tint-80);
+  color: var(--color-charcoal-80);
   border: 1px solid var(--color-charcoal);
   font-size: 20px;
   font-weight: 500;
-  width: 250px;
-  height: 150px;
-  padding: 50px;
+
+  width: 300px;
+  height: 60px;
+
   text-align: center;
-  border-radius: 25px;
+  border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s;
-
+  box-shadow: 0 4px 12px rgba(87, 54, 47, 0.5);
 
 }
 
 #answer-buttons {
-  gap: 15px;
-  width: 100%;
-
+  gap: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 600px;
-  margin: 20px auto;
   justify-content: center;
 }
 
@@ -1993,7 +1994,7 @@ border radius used to create the abstract shape*/
   /*pointer on button so the user knows to click*/
   display: none;
   /*display:none so the button is hidden until an answer is selected*/
-  margin: 20px auto 0 auto;
+  margin: 25px auto 0 auto;
 
 }
 
@@ -2023,7 +2024,7 @@ border radius used to create the abstract shape*/
   padding: 5px;
   display: block;
   text-align: center;
-  color: var(--color-cream);
+  color: var(--color-charcoal-40);
 }
 
 /* Style the sl progress bar */
@@ -2031,10 +2032,13 @@ border radius used to create the abstract shape*/
   --height: 2rem;
   --track-color: var(--color-cream);
   --indicator-color: var(--color-tan);
-  width: 500px;
-  margin: 20px 0;
+  width: 90%;
+  min-width: 150px;
+  margin: 20px;
+  padding: 10px;
   display: none;
   /*hiding progress bar by default will show during the quiz*/
+
 
 }
 
@@ -2130,7 +2134,7 @@ border radius used to create the abstract shape*/
 
 
   /*section 3*/
-
+  /* 
   #section-3 {
     padding-inline: 15px 20px;
   }
@@ -2161,7 +2165,7 @@ border radius used to create the abstract shape*/
     height: 100px;
     padding: 30px;
 
-  }
+  } */
 
 
 
@@ -2202,7 +2206,7 @@ border radius used to create the abstract shape*/
 
 
   /*changing the shape of the quiz to square*/
-  .q-app {
+  /* .q-app {
     width: 90%;
     min-width: 300px;
     min-height: 200px;
@@ -2227,7 +2231,7 @@ border radius used to create the abstract shape*/
     margin: 5px 0;
   }
 
-  /*quiz buttons for the answers*/
+  /*quiz buttons for the answers
   .btn {
     font-size: 20px;
     width: 45%;
@@ -2243,7 +2247,7 @@ border radius used to create the abstract shape*/
 
     display: block;
 
-  }
+  } */
 
   .urls {
     width: 70vw;

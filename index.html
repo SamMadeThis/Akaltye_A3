@@ -75,9 +75,7 @@
     
         <div class="s2-about">
           <h2>Purpose</h2>
-        <p >The aim of this project is to increase the number Arrernte language speakers, currently there is less than 4,000 speakers.
-          <BR>Arrernte (Aranda) is one of more than 250 Aboriginal languages spoken in Australia, this website focuses on Eastern and Central Arrernte dialect.
-          
+        <p>The aim of this project is to increase the number Arrernte language speakers, currently there is less than 4,000 speakers. Arrernte (Aranda) is one of more than 250 Aboriginal languages spoken in Australia. We focuse on Eastern and Central Arrernte dialect and reference the Eastern and Central Arrernte to English Dictionary by <a href="https://www.veronicadobson.au/">Veronica Dobson</a>.   
         </p></div>
  
         <div class="s2-about">
@@ -216,8 +214,13 @@
     - a result will be produced at the end of the quiz.   -->
 
     <div class="section" id="section-4">
-      <h1>Test your Knowledge</h1>
-      
+
+      <h1>Test your knowledge</h1>
+
+      <div>
+      <sl-progress-bar id="quizProgressBar" value="0" >
+            <span id="progressLabel">0%</span>
+          </sl-progress-bar>
       <div class="q-app">
         <div class="quiz">
           <h2 id="question">Question goes here</h2>
@@ -233,10 +236,8 @@
         <div id="output">
           <p id="outputMessage"></p>
 
-          <sl-progress-bar id="quizProgressBar" value="0" >
-            <span id="progressLabel">0%</span>
-          </sl-progress-bar>
-
+          
+        </div>
         </div>
     </div>
 
