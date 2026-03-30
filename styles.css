@@ -1726,8 +1726,8 @@ sl-button::part(base):hover {
   padding: 1.45rem;
   background-color: #f0eff79c;
   border-radius: 20px;
-  min-width: 350px;
-  max-width: 900px;
+  min-width: 250px, 75ch;
+  max-width: 900px, 75ch;
   box-shadow: 0 6px 20px rgba(87, 54, 47, 0.25);
   backdrop-filter: blur(10px);
 
