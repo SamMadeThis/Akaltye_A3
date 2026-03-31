@@ -1738,8 +1738,6 @@ sl-button::part(base):hover {
   font-size: 1rem;
 }
 
-
-
 /* Button styling */
 #s2-btn {
   margin-top: 10px;
@@ -1802,7 +1800,7 @@ sl-button::part(base):hover {
 
 .word-card {
   position: relative;
-  background-color: var(--color-charcoal-tint-20);
+  background-color: var(--color-dark-brown-tint-80);
   border: 1px solid var(--color-tan);
   display: flex;
   border-radius: 25px;
@@ -1921,7 +1919,7 @@ border radius used to create the abstract shape*/
 
   height: 500px;
   max-width: 600px;
-  min-width: 150px;
+  min-width: 125px;
 
   display: flex;
   /*justify-content: space-between;*/
@@ -2068,8 +2066,8 @@ border radius used to create the abstract shape*/
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  width: 90%;
+  
+  width: 95vw;
   gap: 15px;
   flex-wrap: wrap;
   /*added wrap for smaller screens*/
@@ -2078,15 +2076,16 @@ border radius used to create the abstract shape*/
 
 .urls {
   display: flex;
-  background-color: var(--color-charcoal);
+  background-color: var(--color-charcoal-tint-20);
   color: var(--color-cream);
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 90px;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  font-size: 1.25rem;
+  padding: 5px;
+  font-size: 1rem;
+  line-height: normal;
 }
 
 
@@ -2249,9 +2248,5 @@ border radius used to create the abstract shape*/
 
   } */
 
-  .urls {
-    width: 70vw;
-    height: 30vh;
-
-  }
+ 
 }
